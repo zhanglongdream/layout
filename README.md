@@ -1,3 +1,3 @@
-# 不使用css3就画各种姿势的三角
+# 静态页面的各种姿势
 
-![triangle](./triangle.png)
+[三角](./三角/README.md)
