@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		textarea{
+			color: red;
+			font-size: 30px;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<textarea  id="area" cols="50" rows="10">
+	</textarea>
+	<input type="button" onClick="count()" value="来一下">
+	<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+
+function count(){
+	var arry = $("#area").val().split("\n");
+	console.log(arry);
+	console.log( arry[0]);
+}
+</script>
+</body>
+</html>

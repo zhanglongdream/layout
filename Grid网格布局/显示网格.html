@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>显示网格</title>
+	<style type="text/css">
+		.container{
+             display: grid;
+             border:1px solid gray;
+             /*这里的 200px 1fr 1fr
+              第一列的宽度是200px
+              将剩余的容器分成两部分，， 这里1fr 1fr就是等分的意思
+             */
+             grid-template-columns: 200px 1fr 1fr;
+
+		}
+		.container div:nth-child(odd){
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
+</body>
+</html>

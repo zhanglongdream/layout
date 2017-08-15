@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网格间隙</title>
+	<style type="text/css">
+         .container{
+         	display: grid;
+         	border:1px solid #ff0000;
+         	grid-template-columns:repeat(3 , 1fr);
+         	/*第一个参数是行的间隙   第二个参数是列的间隙*/
+         	grid-gap:10px 20px;
+         }
+         .container div{
+         	background: red;
+         }
+	</style>
+</head>
+<body>
+   <div class="container">
+   	 <div>1</div>
+   	 <div>2</div>
+   	 <div>3</div>
+   	 <div>4</div>
+   	 <div>5</div>
+   	 <div>6</div>
+   </div>
+</body>
+</html>

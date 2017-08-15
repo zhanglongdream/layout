@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>显示网格 grid-template-columns</title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			border:1px solid #ff0000;
+			grid-template-columns:1fr repeat(1, 100px) 2fr;
+			/*轨道尺寸函数可以是具体的长度、相对于网格容器的百分比、按实际填充内容计算（如min-content）或者可用空间片段。*/
+		}
+	</style>
+</head>
+<body>
+   <div class="container">
+   	 <div>1</div>
+   	 <div>2</div>
+   	 <div>3</div>
+   	 <div>4</div>
+   	 <div>5</div>
+   	 <div>6</div>
+   </div>
+</body>
+</html>

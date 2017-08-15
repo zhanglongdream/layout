@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>显示网格repeat</title>
+	<style type="text/css">
+		 .container{
+		 	display: grid;
+		 	/*规定应该重复的数量，也就是分成多少列
+              第二个参数：规定分成的列的宽度
+		 	*/
+		 	grid-template-columns:repeat(3 , 1fr);
+		 }
+	</style>
+</head>
+<body>
+   <div class="container">
+   	  <div>1</div>
+   	  <div>2</div>
+   	  <div>3</div>
+   	  <div>4</div>
+   	  <div>5</div>
+   	  <div>6</div>
+   </div>
+</body>
+</html>

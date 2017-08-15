@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>显示网格minmax</title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			border:1px solid #ff0000;
+			/*minmax设置最大 最小列宽度
+              首先当大于其临界值的时候是等分的，小于临界值的时候 定值是200px 
+              临界值是多少呢？200的2倍，也就是400.
+              请注意在这个例子中 1 3 5 的宽度不管屏幕如何缩放 都是200px
+			*/
+			grid-template-columns:minmax(200px , 1fr) 1fr;
+		}
+	</style>
+</head>
+<body>
+  <div class="container">
+  	 <div>1</div>
+  	 <div>2</div>
+  	 <div>3</div>
+  	 <div>4</div>
+  	 <div>5</div>
+  	 <div>6</div>
+  </div>
+</body>
+</html>
